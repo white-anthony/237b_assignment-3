@@ -15,8 +15,8 @@ In `lib/CL/CMakeLists.txt`, remove lines 322-325.
 pkg install llvmgold
 mkdir build
 unset LD_LIBRARY_PATH
-cmake -DEXTRA_HOST_CLANG_FLAGS="-llog" -DCMAKE_INSTALL_PREFIX=~/.pocl ..
-make
+cmake -DCMAKE_C_FLAGS="-llog" -DCMAKE_INSTALL_PREFIX=~/.pocl ..
+make -j2
 make install
 ```
 

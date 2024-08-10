@@ -1,0 +1,7 @@
+Matrix Multiplication Timing Log
+================================
+Run 1: 16 16 16 -> .106918405 seconds
+Run 2: 64 64 64 -> .073211715 seconds
+Run 3: 64 128 64matrix -> .075769223 seconds
+Run 4: 84 84 84 -> .076352751 seconds
+Run 5: 2048 2048 2048 -> 2.639184520 seconds
