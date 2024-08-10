@@ -1,0 +1,6 @@
+[submodule "lab/pocl/pocl_src"]
+	path = lab/pocl/pocl_src
+	url = https://github.com/pocl/pocl.git
+[submodule "helper_lib"]
+	path = helper_lib
+	url = git@github.com:ucsd-wes-237b/helper-lib.git
