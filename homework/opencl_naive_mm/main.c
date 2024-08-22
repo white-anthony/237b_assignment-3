@@ -93,6 +93,8 @@ void OpenCLMatrixMultiply(Matrix *input0, Matrix *input1, Matrix *result)
     //@@ Launch the GPU Kernel here
 
     //@@ Copy the GPU memory back to the CPU here
+
+    //@@ Free the GPU memory here
 }
 
 int main(int argc, char *argv[])
