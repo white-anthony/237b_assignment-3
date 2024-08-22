@@ -61,10 +61,8 @@ void OpenCLMatrixMultiply(Matrix *input0, Matrix *input1, Matrix *result)
     CHECK_ERR(err, "clCreateKernel");
 
     //@@ Allocate GPU memory here
-    // Create memory buffers for input and output matrices
 
     //@@ Copy memory to the GPU here
-    // Copy input matrices to memory buffers
 
     // Set the arguments to our compute kernel
     // __global const float *A, __global const float *B, __global float *C,
@@ -93,10 +91,8 @@ void OpenCLMatrixMultiply(Matrix *input0, Matrix *input1, Matrix *result)
     // @@ define local and global work sizes
 
     //@@ Launch the GPU Kernel here
-    // Execute the OpenCL kernel on the array
 
     //@@ Copy the GPU memory back to the CPU here
-    // Read the memory buffer output_mem_obj to the local variable result
 }
 
 int main(int argc, char *argv[])
