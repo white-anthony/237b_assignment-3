@@ -5,8 +5,9 @@
 To install execute the following
 
 ```bash
-git submodule update --init --recursive
-cd pocl_src
+cd ~
+git https://github.com/pocl/pocl.git
+cd pocl
 ```
 
 In `lib/CL/CMakeLists.txt`, update line 204 to be `if(ANDROID OR LINUX)`.
