@@ -15,28 +15,20 @@ Edit the code in the code tab to perform the following:
 
 Recommended Block dimensions are $16 \times 16$.
 
-# Files and Directories
+## Files and Directories
 
 * `Makefile`: Automates the compilation and execution process for the project.
-* `tmm.c`: Source code for the tiled matrix multiplication using OpenCL.
-* `datagen.c`: Source code for generating random matrices.
+* `main.c`: Source code for the tiled matrix multiplication using OpenCL.
 * `kernel.cl`: OpenCL kernel file for performing tiled matrix multiplication.
-* `test.sh`: Script to run the matrix multiplication on all generated matrix sets.
-* `datagen.sh`: Script to generate multiple sets of matrices.
-* `matrices/`: Directory to store the generated matrix sets.
-* `timing_log.txt`: File to log the execution time for each matrix multiplication run.
 
 ## How to Compile
-The `tmm.c`, `kernel.cl` files contains the code for the programming assignment. There is a Makefile included which compiles it and links it with the libgputk CUDA library automatically. It can be run by typing make from the PA3 folder. It generates a tmm output file.
+The `main.c`, `kernel.cl` files contains the code for the programming assignment. There is a Makefile included which compiles it and links it with the `helper_lib` library automatically. It can be run by typing make from the `opencl_tiled_mm` folder. It generates a `solution` output file.
 
 ## How to Test
-Use the make run command to test your program. here are a total of 9 tests on which your program will be evaluated for (functional) correctness. Since PA3 and PA4 are functionally the same, we will use the last test case to verify if your programs meet the speedup requirements that you should get using shared memory. The timing requirements will only be strict enough to ensure students cannot submit PA3’s solution in PA4 and get credit. Timing details will be saved in
-
-## Dataset Generation (Optional)
-The dataset required to test the program is already generated. If you are interested in how the dataset is generated please refer to the `datagen.c` file. To recreate the dataset, run the `datagen.sh` script.
+Use the make run command to test your program. here are a total of 9 tests on which your program will be evaluated for (functional) correctness. Since PA3 and PA4 are functionally the same, we will use the last test case to verify if your programs meet the speedup requirements that you should get using shared memory.
 
 ## Submission
-Submit the `tmm.c` and `kernel.cl` files on Gradescope. Preserve the file name and kernel file name as the kernel name is used to identify and time the kernel code.
+Submit the GitHub repo to Gradescope.
 
 ## Further Documentation
 `float allocateMatrix(int rows, int cols)`:
